@@ -1,0 +1,41 @@
+# -------------------------
+# Python / virtual envs
+# -------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# -------------------------
+# Jupyter
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# Editor / OS
+# -------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Data handling
+# -------------------------
+# Ignore raw data entirely
+data/raw/*
+!data/raw/.gitkeep
+
+# Ignore all processed data EXCEPT the final panel
+data/processed/*
+!data/processed/state_year_panel.parquet
+!data/processed/.gitkeep
+
+# -------------------------
+# Tables (usually generated)
+# -------------------------
+reports/tables/*
+!reports/tables/.gitkeep
